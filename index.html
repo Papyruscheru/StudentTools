@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="StudentTools provides free online calculators and productivity tools for students and everyday users.">
+
+    <meta name="keywords"
+          content="student tools, GPA calculator, CGPA calculator, percentage calculator, grade calculator, loan calculator, word counter">
+
+    <title>StudentTools - Free Online Tools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">S</span>
+            StudentTools
+        </a>
+
+        <nav>
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="themeBtn" class="theme-btn">
+            🌙
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container hero-content">
+
+        <div class="badge">
+            ✨ Free online productivity tools
+        </div>
+
+        <h1>
+            Simple tools to help
+            <span>you work smarter.</span>
+        </h1>
+
+        <p>
+            Calculate, convert, write and solve everyday problems
+            with fast and easy-to-use online tools.
+        </p>
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a tool..."
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TOP AD ================= -->
+
+<div class="container">
+
+    <div class="ad-box">
+        <small>ADVERTISEMENT</small>
+        <span>Ad space</span>
+    </div>
+
+</div>
+
+
+<!-- ================= TOOLS ================= -->
+
+<section id="tools" class="tools-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="eyebrow">PRODUCTIVITY</p>
+                <h2>All Tools</h2>
+            </div>
+
+            <p>
+                Free tools for students, professionals and everyday tasks.
+            </p>
+
+        </div>
+
+
+        <div class="tools-grid" id="toolsGrid">
+
+            <!-- 1 -->
+
+            <article class="tool-card" data-name="gpa grade point average calculator">
+
+                <div class="tool-icon purple">📊</div>
+
+                <h3>GPA Calculator</h3>
+
+                <p>Calculate GPA using grades and credit hours.</p>
+
+                <button onclick="openTool('gpaModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 2 -->
+
+            <article class="tool-card" data-name="cgpa cumulative grade point average calculator">
+
+                <div class="tool-icon blue">🎓</div>
+
+                <h3>CGPA Calculator</h3>
+
+                <p>Calculate cumulative GPA across semesters.</p>
+
+                <button onclick="openTool('cgpaModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 3 -->
+
+            <article class="tool-card" data-name="percentage calculator">
+
+                <div class="tool-icon green">🧮</div>
+
+                <h3>Percentage Calculator</h3>
+
+                <p>Calculate percentages quickly and easily.</p>
+
+                <button onclick="openTool('percentageModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 4 -->
+
+            <article class="tool-card" data-name="word character counter">
+
+                <div class="tool-icon orange">📝</div>
+
+                <h3>Word Counter</h3>
+
+                <p>Count words, characters and sentences.</p>
+
+                <button onclick="openTool('counterModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 5 -->
+
+            <article class="tool-card" data-name="age calculator">
+
+                <div class="tool-icon pink">🎂</div>
+
+                <h3>Age Calculator</h3>
+
+                <p>Calculate your exact age from your birthday.</p>
+
+                <button onclick="openTool('ageModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 6 -->
+
+            <article class="tool-card" data-name="unit converter">
+
+                <div class="tool-icon purple">🔄</div>
+
+                <h3>Unit Converter</h3>
+
+                <p>Convert distance, weight and common units.</p>
+
+                <button onclick="openTool('unitModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 7 -->
+
+            <article class="tool-card" data-name="loan calculator">
+
+                <div class="tool-icon blue">💰</div>
+
+                <h3>Loan Calculator</h3>
+
+                <p>Estimate monthly loan payments and interest.</p>
+
+                <button onclick="openTool('loanModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 8 -->
+
+            <article class="tool-card" data-name="discount calculator">
+
+                <div class="tool-icon green">🏷️</div>
+
+                <h3>Discount Calculator</h3>
+
+                <p>Calculate discounts and final prices.</p>
+
+                <button onclick="openTool('discountModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 9 -->
+
+            <article class="tool-card" data-name="grade calculator">
+
+                <div class="tool-icon orange">📚</div>
+
+                <h3>Grade Calculator</h3>
+
+                <p>Calculate your percentage and academic grade.</p>
+
+                <button onclick="openTool('gradeModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 10 -->
+
+            <article class="tool-card" data-name="time calculator">
+
+                <div class="tool-icon pink">⏱️</div>
+
+                <h3>Time Calculator</h3>
+
+                <p>Add hours and minutes together.</p>
+
+                <button onclick="openTool('timeModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 11 -->
+
+            <article class="tool-card" data-name="bmi calculator">
+
+                <div class="tool-icon purple">⚖️</div>
+
+                <h3>BMI Calculator</h3>
+
+                <p>Calculate your body mass index.</p>
+
+                <button onclick="openTool('bmiModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 12 -->
+
+            <article class="tool-card" data-name="simple interest calculator">
+
+                <div class="tool-icon blue">📈</div>
+
+                <h3>Simple Interest</h3>
+
+                <p>Calculate simple interest and total amount.</p>
+
+                <button onclick="openTool('interestModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 13 -->
+
+            <article class="tool-card" data-name="tip calculator">
+
+                <div class="tool-icon green">💵</div>
+
+                <h3>Tip Calculator</h3>
+
+                <p>Calculate tips and split bills between people.</p>
+
+                <button onclick="openTool('tipModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 14 -->
+
+            <article class="tool-card" data-name="average calculator mean">
+
+                <div class="tool-icon orange">📐</div>
+
+                <h3>Average Calculator</h3>
+
+                <p>Calculate the average of multiple numbers.</p>
+
+                <button onclick="openTool('averageModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+
+            <!-- 15 -->
+
+            <article class="tool-card" data-name="password generator">
+
+                <div class="tool-icon pink">🔐</div>
+
+                <h3>Password Generator</h3>
+
+                <p>Generate a random strong password.</p>
+
+                <button onclick="openTool('passwordModal')">
+                    Open tool →
+                </button>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MID AD ================= -->
+
+<div class="container">
+
+    <div class="ad-box large-ad">
+        <small>ADVERTISEMENT</small>
+        <span>Ad space</span>
+    </div>
+
+</div>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about-section">
+
+    <div class="container about">
+
+        <div>
+
+            <p class="eyebrow">ABOUT US</p>
+
+            <h2>
+                Useful tools without unnecessary complexity.
+            </h2>
+
+        </div>
+
+        <p>
+            StudentTools provides simple online calculators and
+            productivity tools designed to make everyday tasks faster
+            and easier.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container contact">
+
+        <p class="eyebrow">CONTACT</p>
+
+        <h2>Get in touch</h2>
+
+        <p>
+            Have a suggestion for a new tool or found a problem?
+            We'd love to hear from you.
+        </p>
+
+        <a class="contact-button" href="mailto:pssctlevine@gmail.com">
+            ✉️ Contact us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container footer-content">
+
+        <div>
+
+            <a href="#" class="logo">
+                <span class="logo-icon">S</span>
+                StudentTools
+            </a>
+
+            <p>
+                Simple tools. Better productivity.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#tools">Tools</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 StudentTools. All rights reserved.
+    </div>
+
+</footer>
+
+
+<!-- =====================================================
+     GPA MODAL
+===================================================== -->
+
+<div class="modal" id="gpaModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('gpaModal')">×</button>
+
+        <h2>📊 GPA Calculator</h2>
+
+        <p>Enter your grades and credit hours.</p>
+
+        <div id="courses">
+
+            <div class="course-row">
+
+                <select class="grade">
+                    <option value="4">A</option>
+                    <option value="3">B</option>
+                    <option value="2">C</option>
+                    <option value="1">D</option>
+                    <option value="0">F</option>
+                </select>
+
+                <input
+                    type="number"
+                    class="credits"
+                    placeholder="Credits"
+                    min="1"
+                >
+
+            </div>
+
+        </div>
+
+        <button class="secondary-btn" onclick="addCourse()">
+            + Add course
+        </button>
+
+        <button class="primary-btn" onclick="calculateGPA()">
+            Calculate GPA
+        </button>
+
+        <div id="gpaResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     CGPA
+===================================================== -->
+
+<div class="modal" id="cgpaModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('cgpaModal')">×</button>
+
+        <h2>🎓 CGPA Calculator</h2>
+
+        <p>Enter semester GPA and credits.</p>
+
+        <div id="semesters">
+
+            <div class="course-row">
+
+                <input
+                    type="number"
+                    class="semesterGpa"
+                    placeholder="GPA"
+                    min="0"
+                    max="4"
+                    step="0.01"
+                >
+
+                <input
+                    type="number"
+                    class="semesterCredits"
+                    placeholder="Credits"
+                    min="1"
+                >
+
+            </div>
+
+        </div>
+
+        <button class="secondary-btn" onclick="addSemester()">
+            + Add semester
+        </button>
+
+        <button class="primary-btn" onclick="calculateCGPA()">
+            Calculate CGPA
+        </button>
+
+        <div id="cgpaResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PERCENTAGE
+===================================================== -->
+
+<div class="modal" id="percentageModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('percentageModal')">×</button>
+
+        <h2>🧮 Percentage Calculator</h2>
+
+        <p>What is X% of Y?</p>
+
+        <input type="number" id="percentX" placeholder="Percentage">
+
+        <input type="number" id="percentY" placeholder="Number">
+
+        <button class="primary-btn" onclick="calculatePercentage()">
+            Calculate
+        </button>
+
+        <div id="percentageResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     WORD COUNTER
+===================================================== -->
+
+<div class="modal" id="counterModal">
+
+    <div class="modal-content large-modal">
+
+        <button class="close" onclick="closeTool('counterModal')">×</button>
+
+        <h2>📝 Word Counter</h2>
+
+        <textarea
+            id="counterText"
+            placeholder="Type or paste your text here..."
+            oninput="countWords()"
+        ></textarea>
+
+        <div class="counter-results">
+
+            <div>
+                <strong id="wordCount">0</strong>
+                <span>Words</span>
+            </div>
+
+            <div>
+                <strong id="characterCount">0</strong>
+                <span>Characters</span>
+            </div>
+
+            <div>
+                <strong id="sentenceCount">0</strong>
+                <span>Sentences</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     AGE
+===================================================== -->
+
+<div class="modal" id="ageModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('ageModal')">×</button>
+
+        <h2>🎂 Age Calculator</h2>
+
+        <input type="date" id="birthDate">
+
+        <button class="primary-btn" onclick="calculateAge()">
+            Calculate Age
+        </button>
+
+        <div id="ageResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     UNIT
+===================================================== -->
+
+<div class="modal" id="unitModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('unitModal')">×</button>
+
+        <h2>🔄 Unit Converter</h2>
+
+        <select id="unitType">
+
+            <option value="km">Kilometers → Miles</option>
+            <option value="miles">Miles → Kilometers</option>
+            <option value="kg">Kilograms → Pounds</option>
+            <option value="pounds">Pounds → Kilograms</option>
+
+        </select>
+
+        <input
+            type="number"
+            id="unitValue"
+            placeholder="Enter value"
+        >
+
+        <button class="primary-btn" onclick="convertUnit()">
+            Convert
+        </button>
+
+        <div id="unitResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     LOAN
+===================================================== -->
+
+<div class="modal" id="loanModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('loanModal')">×</button>
+
+        <h2>💰 Loan Calculator</h2>
+
+        <input
+            type="number"
+            id="loanAmount"
+            placeholder="Loan amount"
+        >
+
+        <input
+            type="number"
+            id="loanRate"
+            placeholder="Annual interest rate (%)"
+            step="0.01"
+        >
+
+        <input
+            type="number"
+            id="loanYears"
+            placeholder="Loan term (years)"
+        >
+
+        <button class="primary-btn" onclick="calculateLoan()">
+            Calculate
+        </button>
+
+        <div id="loanResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     DISCOUNT
+===================================================== -->
+
+<div class="modal" id="discountModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('discountModal')">×</button>
+
+        <h2>🏷️ Discount Calculator</h2>
+
+        <input
+            type="number"
+            id="originalPrice"
+            placeholder="Original price"
+        >
+
+        <input
+            type="number"
+            id="discountPercent"
+            placeholder="Discount (%)"
+        >
+
+        <button class="primary-btn" onclick="calculateDiscount()">
+            Calculate
+        </button>
+
+        <div id="discountResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     GRADE
+===================================================== -->
+
+<div class="modal" id="gradeModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('gradeModal')">×</button>
+
+        <h2>📚 Grade Calculator</h2>
+
+        <input
+            type="number"
+            id="marksObtained"
+            placeholder="Marks obtained"
+        >
+
+        <input
+            type="number"
+            id="totalMarks"
+            placeholder="Total marks"
+        >
+
+        <button class="primary-btn" onclick="calculateGrade()">
+            Calculate Grade
+        </button>
+
+        <div id="gradeResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TIME
+===================================================== -->
+
+<div class="modal" id="timeModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('timeModal')">×</button>
+
+        <h2>⏱️ Time Calculator</h2>
+
+        <input
+            type="number"
+            id="hours1"
+            placeholder="Hours"
+            min="0"
+        >
+
+        <input
+            type="number"
+            id="minutes1"
+            placeholder="Minutes"
+            min="0"
+        >
+
+        <button class="primary-btn" onclick="calculateTime()">
+            Add Time
+        </button>
+
+        <div id="timeResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     BMI
+===================================================== -->
+
+<div class="modal" id="bmiModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('bmiModal')">×</button>
+
+        <h2>⚖️ BMI Calculator</h2>
+
+        <input
+            type="number"
+            id="weight"
+            placeholder="Weight (kg)"
+        >
+
+        <input
+            type="number"
+            id="height"
+            placeholder="Height (cm)"
+        >
+
+        <button class="primary-btn" onclick="calculateBMI()">
+            Calculate BMI
+        </button>
+
+        <div id="bmiResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     SIMPLE INTEREST
+===================================================== -->
+
+<div class="modal" id="interestModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('interestModal')">×</button>
+
+        <h2>📈 Simple Interest</h2>
+
+        <input
+            type="number"
+            id="principal"
+            placeholder="Principal amount"
+        >
+
+        <input
+            type="number"
+            id="interestRate"
+            placeholder="Interest rate (%)"
+        >
+
+        <input
+            type="number"
+            id="interestYears"
+            placeholder="Time (years)"
+        >
+
+        <button class="primary-btn" onclick="calculateInterest()">
+            Calculate
+        </button>
+
+        <div id="interestResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     TIP
+===================================================== -->
+
+<div class="modal" id="tipModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('tipModal')">×</button>
+
+        <h2>💵 Tip Calculator</h2>
+
+        <input
+            type="number"
+            id="billAmount"
+            placeholder="Bill amount"
+        >
+
+        <input
+            type="number"
+            id="tipPercent"
+            placeholder="Tip percentage"
+        >
+
+        <input
+            type="number"
+            id="people"
+            placeholder="Number of people"
+            value="1"
+            min="1"
+        >
+
+        <button class="primary-btn" onclick="calculateTip()">
+            Calculate
+        </button>
+
+        <div id="tipResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     AVERAGE
+===================================================== -->
+
+<div class="modal" id="averageModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('averageModal')">×</button>
+
+        <h2>📐 Average Calculator</h2>
+
+        <input
+            type="text"
+            id="averageNumbers"
+            placeholder="Example: 10, 20, 30, 40"
+        >
+
+        <button class="primary-btn" onclick="calculateAverage()">
+            Calculate Average
+        </button>
+
+        <div id="averageResult" class="result"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     PASSWORD
+===================================================== -->
+
+<div class="modal" id="passwordModal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeTool('passwordModal')">×</button>
+
+        <h2>🔐 Password Generator</h2>
+
+        <input
+            type="number"
+            id="passwordLength"
+            placeholder="Password length"
+            value="16"
+            min="6"
+            max="100"
+        >
+
+        <button class="primary-btn" onclick="generatePassword()">
+            Generate Password
+        </button>
+
+        <div id="passwordResult" class="result"></div>
+
+        <button class="secondary-btn" onclick="copyPassword()">
+            Copy Password
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
